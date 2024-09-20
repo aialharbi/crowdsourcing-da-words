@@ -92,7 +92,7 @@ def display_matching_contexts(selected_word):
         SELECT 'annotation_words_contexts' as source, context as text FROM annotation_words_contexts 
         WHERE context LIKE ? 
         AND instr(context, ?) > 0
-    ''', (f'% {selected_word} %', selected_word))
+    ''', (f'%{selected_word}%', selected_word))
     annotation_results = c.fetchall()
 
     conn.close()
