@@ -1,1 +1,6 @@
 streamlit
+streamlit
+sqlitecloud
+pytz
+datetime
+pandas
